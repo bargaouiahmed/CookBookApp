@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CookBookApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.CookBookApp" parent="Base.Theme.CookBookApp" />
+
+    <style name="Theme.CookBookApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.CookBookApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
