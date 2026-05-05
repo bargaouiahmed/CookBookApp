@@ -7,12 +7,14 @@ import androidx.room.RoomDatabase;
 
 import com.example.cookbookapp.models.Instruction;
 import com.example.cookbookapp.models.Recipe;
+import com.example.cookbookapp.models.User;
 
-@Database(entities = {Recipe.class, Instruction.class}, version = 2)
+@Database(entities = {Recipe.class, Instruction.class, User.class}, version = 3)
 public abstract class AppDatabase extends RoomDatabase {
     private static volatile AppDatabase INSTANCE;
 
     public abstract RecipeDao recipeDao();
+    public abstract UserDao userDao();
 
     public static AppDatabase getInstance(Context context) {
         if (INSTANCE == null) {
